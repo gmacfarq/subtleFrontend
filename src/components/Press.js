@@ -1,3 +1,9 @@
+/**
+ * Press component
+ * @module Contact
+ * @exports Contact
+ * @returns {JSX} The Contact component
+ */
 function Press() {
   return (
     <div>

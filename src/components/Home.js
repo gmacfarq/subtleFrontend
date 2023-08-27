@@ -1,3 +1,9 @@
+/**
+ * Home component
+ * @module Contact
+ * @exports Contact
+ * @returns {JSX} The Contact component
+ */
 function Home() {
   return (
     <div>

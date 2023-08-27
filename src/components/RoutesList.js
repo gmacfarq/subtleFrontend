@@ -6,13 +6,13 @@ import Gallery from './Gallery';
 import Contact from './Contact.js';
 import Home from './Home';
 
-/** List of Route components for routing
- *
- * props:
- *  - no props, this is a dummy router
- *
- * App -> RoutesList -> {Hompe, Music, Store, Press, Gallery, Contact}
- */
+/**
+ * The routes list component.
+ * Used in App.js.
+ * @module RoutesList
+ * @returns {JSX} The routes list component.
+ * @exports RoutesList
+ **/
 function RoutesList() {
   return (
 

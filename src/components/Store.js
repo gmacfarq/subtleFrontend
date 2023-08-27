@@ -1,3 +1,9 @@
+/**
+ * Store component
+ * @module Contact
+ * @exports Contact
+ * @returns {JSX} The Contact component
+ */
 function Store() {
   return (
     <div>

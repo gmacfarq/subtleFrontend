@@ -7,3 +7,12 @@
   body {
     font-family: 'blippo', sans-serif !important;
   }
+
+  .main{
+    background-color: #ffcbc0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

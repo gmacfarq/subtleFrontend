@@ -2,14 +2,21 @@ import { BrowserRouter } from 'react-router-dom';
 import Navigation from './Navigation';
 import RoutesList from './RoutesList';
 import './App.css';
-
+/**
+ * The main component of the app.
+ * @module App
+ * @returns {JSX} The main component of the app.
+ * @exports App
+ */
 function App() {
   return (
     <>
       <div className="App">
         <BrowserRouter>
           <Navigation/>
-          <RoutesList/>
+          <div class="main">
+            <RoutesList/>
+          </div>
         </BrowserRouter>
       </div>
       <div className="footer">
