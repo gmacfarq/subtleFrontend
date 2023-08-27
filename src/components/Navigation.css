@@ -1,0 +1,22 @@
+#nav-links-custom {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-around;
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-link-custom {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+.nav-link-custom:hover {
+    color: #ffcbc0 !important;
+}
