@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'blippo';
+    src: url('../static/blippo.otf') format('opentype');
+  }
+
+
+  body {
+    font-family: 'blippo', sans-serif !important;
+  }
