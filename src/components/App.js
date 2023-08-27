@@ -5,12 +5,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navigation/>
-        <RoutesList/>
-      </BrowserRouter>
-    </div>
+    <>
+      <div className="App">
+        <BrowserRouter>
+          <Navigation/>
+          <RoutesList/>
+        </BrowserRouter>
+      </div>
+      <div className="footer">
+        <p>© 2023 Subtle Orange</p>
+      </div>
+    </>
   );
 }
 

@@ -6,6 +6,8 @@
     width: 60%;
     margin: 0 auto;
     padding: 0;
+    position : relative;
+    right: 50px;
     text-align: center;
 }
 
@@ -19,4 +21,10 @@
 }
 .nav-link-custom:hover {
     color: #ffcbc0 !important;
+}
+nav{
+    width: 100% !important;
+}
+nav .container{
+    justify-content: end !important;
 }
