@@ -1,3 +1,4 @@
+import './Home.css';
 /**
  * Home component
  * @module Contact
@@ -16,6 +17,7 @@ function Home() {
         allowFullScreen
       >
       </iframe>
+
     </div>
   );
 }

@@ -1,4 +1,11 @@
 .youtube-iframe{
-    width: 100%;
-    height: 100%;
+    width: 30vw;
+    height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .youtube-iframe{
+        width: 335px;
+        height: 600px;
+    }
 }
