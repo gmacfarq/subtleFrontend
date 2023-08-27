@@ -4,19 +4,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Navigation.css';
 import logoSlice from '../static/logoslice.png';
 
-const logoWidth = "100";
+
+/**
+ * The navigation bar component.
+ * uses react-bootstrap Navbar and Nav components.
+ * used by App.js.
+ * @module Navigation
+ * @returns {JSX} The navigation bar component.
+ * @exports Navigation
+ */
 function Navigation() {
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
-      <img
-        z-index="2"
-        src={logoSlice}
-        width={logoWidth}
-        height="100"
-        padding="2rem"
-        className="d-inline-block align-top"
-        alt="Subtle Orange logo"
-      />
+    <Navbar expand="md" bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
+        <a href="/">
+          <img
+          z-index="2"
+          src={logoSlice}
+          className="d-inline-block"
+          alt="Subtle Orange logo"
+          />
+        </a>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
