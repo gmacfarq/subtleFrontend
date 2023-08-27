@@ -7,7 +7,15 @@
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Welcome Home</h1>
+      <iframe
+        className="youtube-iframe"
+        src="https://youtube.com/embed/zAcHzmZj2-4?si=8W6sRpBtnPyyiU7E"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      >
+      </iframe>
     </div>
   );
 }
