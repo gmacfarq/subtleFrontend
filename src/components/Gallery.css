@@ -41,12 +41,13 @@ body {
 }
 
 .swiper-slide {
-  width: 80%;
+  width: 50%;
 }
 
 .gallery-pic {
-  max-height: 80vh;
-  min-height: 30vh;
+  max-height: 50rem;
+  min-height: 10rem;
+  max-width: 40rem;
 }
 
 .my-swiper {

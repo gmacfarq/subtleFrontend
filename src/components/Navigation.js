@@ -45,7 +45,6 @@ function Navigation() {
     setIsExpanded(!isExpanded);
   };
 
-
   return (
     <Navbar
       style={{ ...navbarStyles, top: visible ? '0' : isExpanded ? '-27rem' : '-10rem' }}
