@@ -10,7 +10,6 @@ import './Gallery.css';
 
 // import required modules
 import { Navigation, Pagination } from 'swiper/modules';
-import { useEffect } from 'react';
 /**
  * Gallery component
  * @module Contact
@@ -23,33 +22,30 @@ function Gallery() {
   for (let i = 1; i <= 41; i++) {
     galleryPhotos.push({
       id: i,
-      path: require(`../static/gallery/SO${i}.JPG`).default,
+      path: `./images/SO${i}.JPG`,
       alt: `Image ${i}`
     });
   }
 
   return (
-    <div className="Gallery">
+    <div className="gallery">
       <h1>Gallery</h1>
-      <>
         <Swiper
-          slidesPerView={'auto'}
+          modules={[Navigation, Pagination]}
           spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
+          slidesPerView={'auto'}
+          grabCursor={true}
+          centeredSlides={true}
           navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="my-swiper"
         >
           {galleryPhotos.map((photo) => (
             <SwiperSlide key={photo.id}>
-              <img src={photo.path} alt={photo.alt} />
-              testing
+              <img className={'gallery-pic'} src={photo.path} alt={photo.alt} />
             </SwiperSlide>
           ))}
         </Swiper>
-      </>
+
     </div>
   );
 
