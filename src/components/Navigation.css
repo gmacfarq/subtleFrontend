@@ -24,6 +24,7 @@ nav{
     width: 100% !important;
     min-height: 10rem;
     border: none !important;
+    z-index: 2;
 }
 nav .container{
     justify-content: end !important;

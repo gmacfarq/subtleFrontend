@@ -45,7 +45,6 @@ function Gallery() {
             </SwiperSlide>
           ))}
         </Swiper>
-
     </div>
   );
 

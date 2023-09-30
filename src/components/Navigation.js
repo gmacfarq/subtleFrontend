@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useState, useEffect, useContext } from 'react';
 import './Navigation.css';
 import logoSlice from '../static/logoslice.webp';
 
@@ -14,18 +15,53 @@ import logoSlice from '../static/logoslice.webp';
  * @exports Navigation
  */
 function Navigation() {
+
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // find current scroll position
+      const currentScrollPos = window.scrollY;
+
+      // set state based on location info (explained in more detail below)
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10 );
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, isExpanded]);
+
+  const navbarStyles = {
+    position: 'fixed',
+    width: '100%',
+    transition: 'top 0.6s'
+  };
+
+  const handleNavbarToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+
   return (
-    <Navbar expand="md" bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
-        <a href="/">
-          <img
-          z-index="2"
+    <Navbar
+      style={{ ...navbarStyles, top: visible ? '0' : isExpanded ? '-27rem' : '-10rem' }}
+      expand="md"
+      bg="dark"
+      data-bs-theme="dark"
+      className="bg-body-tertiary">
+      <a href="/">
+        <img
           src={logoSlice}
           className="d-inline-block"
           alt="Subtle Orange logo"
-          />
-        </a>
+        />
+      </a>
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle onClick={handleNavbarToggle} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav id="nav-links-custom" className="me-auto">
             <Nav.Link className="nav-link-custom" href="/music">Music</Nav.Link>
