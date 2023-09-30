@@ -8,8 +8,9 @@
 function Contact() {
   return (
     <div className="Contact">
-      <h1>Contact</h1>
-      <p>Subtle Orange</p>
+      <h1>Contact Us</h1>
+      <h3>Subtle Orange</h3>
+      <p>subtleorangeofficial@gmail.com</p>
     </div>
   );
 }

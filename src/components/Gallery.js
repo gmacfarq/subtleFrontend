@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import image from '../static/gallery/SO1.JPG';
+
 
 import './Gallery.css';
 
@@ -42,8 +42,6 @@ function Gallery() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide><img src={image} alt={'testphoto'} />
-              testing</SwiperSlide>
           {galleryPhotos.map((photo) => (
             <SwiperSlide key={photo.id}>
               <img src={photo.path} alt={photo.alt} />

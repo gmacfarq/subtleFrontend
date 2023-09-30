@@ -42,7 +42,7 @@ nav img {
     width: 7rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 946px) {
     nav img {
         position: absolute;
         top:0;
