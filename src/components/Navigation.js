@@ -15,7 +15,6 @@ import logoSlice from '../static/logoslice.webp';
  * @exports Navigation
  */
 function Navigation() {
-
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -25,7 +24,7 @@ function Navigation() {
       // find current scroll position
       const currentScrollPos = window.scrollY;
 
-      // set state based on location info (explained in more detail below)
+      //set state based on location info (explained in more detail below)
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10 );
       setPrevScrollPos(currentScrollPos);
     };
@@ -41,6 +40,7 @@ function Navigation() {
     transition: 'top 0.6s'
   };
 
+  //hold state of navbar expanded/collapsed
   const handleNavbarToggle = () => {
     setIsExpanded(!isExpanded);
   };
