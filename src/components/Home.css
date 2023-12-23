@@ -1,3 +1,14 @@
+.youtube-iframe{
+    width: 30vw;
+    height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .youtube-iframe{
+        width: 335px;
+        height: 600px;
+    }
+}
 
 .home-wrapper{
     display: flex;
