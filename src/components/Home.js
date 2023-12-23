@@ -24,7 +24,7 @@ function Home() {
         className="youtube-iframe"
         src="https://youtube.com/embed/zAcHzmZj2-4?si=8W6sRpBtnPyyiU7E"
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="picture-in-picture"
         allowFullScreen
       ></iframe>
     </div>
