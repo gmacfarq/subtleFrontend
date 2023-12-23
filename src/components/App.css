@@ -1,19 +1,23 @@
 @font-face {
-    font-family: 'blippo';
-    src: url('../static/blippo.otf') format('opentype');
-  }
+  font-family: 'blippo';
+  src: url('../static/blippo.otf') format('opentype');
+}
 
+html {
+  background-color: #ffcbc0;
+}
 
-  body {
-    font-family: 'blippo', sans-serif !important;
-  }
+body {
+  font-family: 'blippo', sans-serif !important;
+  background-color: #ffcbc0;
+}
 
-  .main{
-    margin-top: 10rem;
-    background-color: #ffcbc0;
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.main {
+  margin-top: 9rem;
+  background-color: #ffcbc0;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -15,44 +15,27 @@
     margin: 0 1rem;
     padding: 1rem 1rem;
     text-decoration: none;
-    transition: all 0.3s ease-in;
+    transition: all 0.6s ease-in;
 }
 .nav-link-custom:hover {
     color: #ffcbc0 !important;
 }
 nav{
     width: 100% !important;
-    min-height: 10rem;
+    min-height: 5rem;
     border: none !important;
-    z-index: 2;
+    z-index: 5;
 }
+
 nav .container{
     justify-content: end !important;
 }
 
-.container button{
-    position: absolute;
-    top: 2rem;
-}
 
 nav img {
     position: absolute;
     top:0;
     left:0;
-    margin: 2rem;
-    width: 7rem;
-}
-
-@media (max-width: 946px) {
-    nav img {
-        position: absolute;
-        top:0;
-        left:0;
-        margin: 1.5rem;
-        width: 5rem
-    }
-
-    nav {
-        min-height: 7rem;
-    }
+    margin-left: 1rem;
+    width: 5rem;
 }

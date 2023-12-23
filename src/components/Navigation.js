@@ -51,7 +51,8 @@ function Navigation() {
       expand="md"
       bg="dark"
       data-bs-theme="dark"
-      className="bg-body-tertiary">
+      className="bg-body-tertiary"
+      >
       <a href="/">
         <img
           src={logoSlice}

@@ -13,6 +13,7 @@ function App() {
     <>
       <div className="App">
         <BrowserRouter>
+
           <Navigation/>
           <div className="main">
             <RoutesList/>

@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import './Gallery.css';
 
 // import required modules
-import { Navigation, Pagination } from 'swiper/modules';
+import { Controller, EffectCards, Mousewheel, Navigation, Pagination } from 'swiper/modules';
 /**
  * Gallery component
  * @module Contact
@@ -19,7 +19,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 function Gallery() {
 
   const galleryPhotos = [];
-  for (let i = 1; i <= 41; i++) {
+  for (let i = 1; i <= 40; i++) {
     galleryPhotos.push({
       id: i,
       path: `./images/SO${i}.JPG`,
@@ -30,21 +30,29 @@ function Gallery() {
   return (
     <div className="gallery">
       <h1>Gallery</h1>
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={10}
-          slidesPerView={'auto'}
-          grabCursor={true}
-          centeredSlides={true}
-          navigation={true}
-          className="my-swiper"
-        >
-          {galleryPhotos.map((photo) => (
-            <SwiperSlide key={photo.id}>
-              <img className={'gallery-pic'} src={photo.path} alt={photo.alt} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+      <Swiper
+        modules={[ Mousewheel, Controller]}
+        spaceBetween={10}
+        slidesPerView={'auto'}
+        _freeModeNoMomentumRelease={true}
+        keyboardControl={true}
+        freeMode={true}
+        grabCursor={true}
+        centeredSlides={true}
+        lazy={true}
+        loop={true}
+        direction="horizontal"
+        mousewheel={true}
+        invert={true}
+        keyboard={true}
+        className="my-swiper"
+      >
+        {galleryPhotos.map((photo) => (
+          <SwiperSlide key={photo.id}>
+            <img className={'gallery-pic'} src={photo.path} alt={photo.alt} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 

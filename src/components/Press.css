@@ -1,0 +1,64 @@
+.press-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.press-image{
+    width: 11rem;
+    height: 100%;
+    object-fit: cover;
+}
+.press-wrapper h1{
+    margin-bottom: 6rem;
+}
+
+.press-record {
+    align-self:flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    gap: 5rem;
+}
+.press-record .text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+    width: 20vw;
+}
+.text p,h2{
+    text-align: center;
+}
+
+a{
+    text-decoration: none !important;
+    color: #ffff !important
+}
+
+a:hover{
+    color: black !important;
+}
+
+@media (max-width: 768px) {
+    .press-record{
+        align-self:center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .press-image{
+        width: 10rem;
+
+    }
+    .press-wrapper h1{
+        margin-bottom: 0;
+    }
+
+    .press-record .text{
+        width: 50vw;
+    }
+}
