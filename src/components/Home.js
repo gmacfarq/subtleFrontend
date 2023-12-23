@@ -20,15 +20,16 @@ function Home() {
         height="352"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       ></iframe>
-      <div className="youtube-iframe">
-        <iframe
-          src="https://www.youtube.com/embed/zAcHzmZj2-4"
-          title="Stream Bailey’s anywhere! #music #band #indie #rock"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
+
+      <iframe
+        className='youtube-iframe'
+        src="https://www.youtube.com/embed/zAcHzmZj2-4"
+        title="Stream Bailey’s anywhere! #music #band #indie #rock"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
     </div>
   );
 }
