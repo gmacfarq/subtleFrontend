@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import './Gallery.css';
 
 // import required modules
-import { Controller, EffectCards, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Mousewheel,} from 'swiper/modules';
 /**
  * Gallery component
  * @module Contact
@@ -31,7 +31,7 @@ function Gallery() {
     <div className="gallery">
       <h1>Gallery</h1>
       <Swiper
-        modules={[ Mousewheel, Controller]}
+        modules={[ Mousewheel]}
         spaceBetween={10}
         slidesPerView={'auto'}
         _freeModeNoMomentumRelease={true}

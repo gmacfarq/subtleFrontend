@@ -13,7 +13,7 @@ function Home() {
         <p>find the latest stuff here</p>
       </div>
       <iframe
-      title = "spotify-iframe"
+        title="spotify-iframe"
         style={{ borderRadius: '12px' }}
         src="https://open.spotify.com/embed/album/3WHnvBnmGoyBFxPH9GYwvh?utm_source=generator"
         width="90%"
@@ -22,11 +22,12 @@ function Home() {
       ></iframe>
       <iframe
         className="youtube-iframe"
-        src="https://youtube.com/embed/zAcHzmZj2-4?si=8W6sRpBtnPyyiU7E"
-        title="YouTube video player"
-        allow="picture-in-picture"
-        allowFullScreen
-      ></iframe>
+        src="https://www.youtube.com/embed/zAcHzmZj2-4"
+        title="Stream Bailey’s anywhere! #music #band #indie #rock"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
     </div>
   );
 }
