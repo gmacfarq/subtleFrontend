@@ -22,7 +22,7 @@ function Gallery() {
   for (let i = 1; i <= 40; i++) {
     galleryPhotos.push({
       id: i,
-      path: `./images/SO${i}.JPG`,
+      path: `./images/SO${i}.webp`,
       alt: `Image ${i}`
     });
   }
