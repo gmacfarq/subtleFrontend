@@ -14,8 +14,18 @@ body {
 
 .main {
   margin-top: 9rem;
+  padding-bottom: 9rem;
   background-color: #ffcbc0;
-  height: 90vh;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: black;
+  height: 5rem;
   width: 100%;
   display: flex;
   justify-content: center;
