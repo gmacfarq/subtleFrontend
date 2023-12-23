@@ -31,14 +31,6 @@ function Press() {
           <p>Vol. 3</p>
         </div>
       </div>
-      <div className='press-record'>
-        <img className='press-image' src={`./images/offthecassette.webp`} alt="scratch" />
-        <div className='text'>
-          <h2>Off The Cassette</h2>
-          <p>Artist Spotlight</p>
-        </div>
-      </div>
-
     </div>
 
 
