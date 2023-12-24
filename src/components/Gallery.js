@@ -3,18 +3,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-
-
 import './Gallery.css';
 
 // import required modules
-import { Mousewheel,} from 'swiper/modules';
+import { Mousewheel } from 'swiper/modules';
 /**
  * Gallery component
- * @module Contact
- * @exports Contact
- * @returns {JSX} The Contact component
+ * @module Gallery
+ * @exports Gallery
+ * @returns {JSX} The Gallery component
  */
 function Gallery() {
 

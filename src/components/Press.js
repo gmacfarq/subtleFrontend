@@ -1,16 +1,11 @@
-import { useNavigate } from 'react-router-dom';
 import './Press.css';
 /**
  * Press component
- * @module Contact
- * @exports Contact
- * @returns {JSX} The Contact component
+ * @module Press
+ * @exports Press
+ * @returns {JSX} The Press component
  */
 function Press() {
-
-  function navToPress(url) {
-    window.open(url, '_blank');
-  }
 
   return (
     <div className="press-wrapper">

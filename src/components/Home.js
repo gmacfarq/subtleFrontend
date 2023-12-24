@@ -1,9 +1,9 @@
 import './Home.css';
 /**
  * Home component
- * @module Contact
- * @exports Contact
- * @returns {JSX} The Contact component
+ * @module Home
+ * @exports Home
+ * @returns {JSX} The Home component
  */
 function Home() {
   return (

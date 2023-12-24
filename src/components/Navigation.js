@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect} from 'react';
 import './Navigation.css';
 import logoSlice from '../static/logoslice.webp';
 
