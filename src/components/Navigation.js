@@ -3,8 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect} from 'react';
 import './Navigation.css';
-import logoSlice from '../static/logoslice.webp';
-
 
 /**
  * The navigation bar component.
@@ -55,7 +53,7 @@ function Navigation() {
       >
       <a href="/">
         <img
-          src={logoSlice}
+          src={'./images/logoslice.webp'}
           className="d-inline-block"
           alt="Subtle Orange logo"
         />
